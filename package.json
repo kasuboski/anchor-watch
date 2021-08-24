@@ -1,0 +1,17 @@
+{
+  "name": "anchor-watch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@anchor-protocol/anchor.js": "^1.1.0",
+    "@terra-money/terra.js": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
