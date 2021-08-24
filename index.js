@@ -5,8 +5,6 @@ import { columbus4, AddressProviderFromJson, MARKET_DENOMS, queryMarketBorrowerI
 const addressProvider = new AddressProviderFromJson(columbus4);
 const lcd = new LCDClient({ URL: 'https://lcd.terra.dev', chainID: 'columbus-4' });
 
-const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
-
 async function getBorrowerInfo(addr) {
   const query = queryMarketBorrowerInfo({lcd, market: MARKET_DENOMS, borrower: addr});
   const resp = await query(addressProvider);
